@@ -14,7 +14,7 @@ refs.stopBtnEl.addEventListener('click', stopCengeColor);
 
 function startCengeColor() {
     timeId = setInterval(() => {
-        document.body.style.background.querySelector = getRandomHexColor();
+        document.body.style.background = getRandomHexColor();
     }, CHANGEBACKGRCOLOR_DELEY);
     refs.startBtnEl.setAttribute('disabled', true);
     refs.stopBtnEl.removeAttribute('disabled');
