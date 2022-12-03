@@ -13,7 +13,7 @@ refs.startBtnEl.addEventListener('click', startCengeColor);
 refs.stopBtnEl.addEventListener('click', stopCengeColor);
 
 function startCengeColor() {
-    timeId = setTimeout(() => {
+    timeId = setInterval(() => {
         document.body.style.background.querySelector = getRandomHexColor();
     }, CHANGEBACKGRCOLOR_DELEY);
     refs.startBtnEl.setAttribute('disabled', true);
